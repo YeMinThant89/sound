@@ -1,0 +1,38 @@
+
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>Sound Cotrolled Aliens</h2>
+      <p>Make bark, buzz, meow and moo sound to activate the counting machine.</p>
+    </div>
+    <div class="main_div">
+      <center>
+        <br>
+        <button class="btn btn-warning" onclick="startClassification();"> START </button>
+        <h3 id="result_label1">Dog detected - </h3>
+        <h3 id="result_label2">Cat detected - </h3>
+        <h3 id="result_label3">Bee detected - </h3>
+        <h3 id="result_label4">Cow detected - </h3>
+        <br>
+        <img src="bee.png" id="bee.png" width="300" height="300">
+        <img src="cat.png" id="cat.png" width="300" height="300">
+        <img src="dog.png" id="dog.png" width="300" height="300">
+        <img src="cow.png" id="cow.png" width="300" height="300">
+      </center>
+    </div>
+    <div class="copy_right_footer">
+      Developed by - Ye Min Thant @ Lucas
+    </div>
+<script src="main.js"></script>
+  </body>
+</html>
